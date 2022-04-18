@@ -1,2 +1,2 @@
 # rest-api
- ini merupakan file latihan belajar api saya
+ ini merupakan file latihan belajar API saya
