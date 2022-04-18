@@ -1,0 +1,36 @@
+[{
+    "nama": "Anggi Setiawan",
+    "umur": 23,
+    "nim" : 181011400567,
+    "lululs": true,
+    "hobby":[
+    "coding",
+    "reading",
+    "futsal"
+    ],
+    "pembimbing": {
+        "pembimbing1": "Wasis",
+        "pembimbing2": "Weni Gurita"
+
+    }
+
+},
+
+
+{
+    "nama": "Tantan Quarantino",
+    "umur": 23,
+    "nim" : 181011400511,
+    "lululs": true,
+    "hobby":[
+    "cooking",
+    "reading",
+    "shooping"
+    ],
+    "pembimbing": {
+        "pembimbing1": "Sandika Galih",
+        "pembimbing2": "Weni Gurita"
+
+    }
+
+}]
