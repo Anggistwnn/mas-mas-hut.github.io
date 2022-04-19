@@ -21,7 +21,7 @@ var_dump($mahasiswa);
 $data = json_encode($mahasiswa);
 echo $data;
 
-// latihan mengambil data json menggunakan encode
+// latihan mengambil data json menggunakan ENCODE
 
 $dbh = new PDO('mysql:host=localhost;dbname=db_sekolah', 'root', '');
 $db = $dbh->prepare('SELECT * FROM tb_siswa');
