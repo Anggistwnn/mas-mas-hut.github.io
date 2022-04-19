@@ -1,3 +1,12 @@
+<!-- <?php
+        $data = file_get_contents('data/pizza.json');
+        $menu = json_decode($data, true);
+
+        $menu = $menu["menu"];
+        echo $menu[0]["nama"];
+
+        ?> -->
+
 <!doctype html>
 <html lang="en">
 
@@ -23,7 +32,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#">All Menu</a>
                 </div>
             </div>
         </div>
@@ -37,17 +46,20 @@
         </div>
 
         <div class="row">
+            <?php foreach ($menu as $row) : ?>
             <div class="col-md-4">
-                <div class="card">
-                    <img src="img/menu/" class="card-img-top" alt="...">
+                <div class="card mb-3">
+                    <img src="img/menu/<?= $row["gambar"]; ?>" class=" card-img-top" alt="american favorite">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title"><?= $row["nama"]; ?></h5>
+                        <p class="card-text"><?= $row["deskripsi"]; ?></p>
+
+                        <h5>Rp <?= $row["harga"]; ?></h5>
+                        <a href="#" class="btn btn-primary">Pesan Sekarang!</a>
                     </div>
                 </div>
             </div>
+            <?php endforeach; ?>
         </div>
     </div>
 
