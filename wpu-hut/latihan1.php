@@ -1,3 +1,5 @@
+<!-- MENGAMBIL DATA JSON PIZZA MENGGUNAKAN PHP -->
+
 <!-- <?php
         $data = file_get_contents('data/pizza.json');
         $menu = json_decode($data, true);
