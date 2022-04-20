@@ -2,7 +2,7 @@
 
 $('#search-button').on('click', function () {
     $.ajax({
-        URL: 'http://omdbapi.com',
+        url: 'http://omdbapi.com',
         type: 'get',
         dataType: 'json',
         data: {
